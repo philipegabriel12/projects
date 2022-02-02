@@ -1,0 +1,327 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Fontes */
+
+.poppins{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFB6C2;
+}
+
+.roboto{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFB6C2;
+}
+
+/* Estrutura */
+
+html, body{
+    margin: 0 auto;
+    background: #191816;
+    height: 100%;
+}
+
+main{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    gap: 15rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+}
+
+.login{
+    width: 24px;
+    height: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    height: 512px;
+    width: 572px;
+    border-radius: 5px;
+    padding: 55px 119px 55px 119px;
+    background: #24221F;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem
+}
+
+.form-header1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #D4CCB6;
+}
+
+.form-header2{
+    line-height: 24px;
+    font-weight: 600;
+    color: #AFB6C2;
+}
+
+.form-email{
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#email{
+    background-color: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    width: 335px;
+    height:44px;
+    padding: 10px 20px 10px 40px;
+}
+
+.form-email img{
+    position:absolute;
+    top:36px;
+    left: 12px;
+}
+
+.form-password{
+    display: flex;
+    position:relative;
+    flex-direction: column;
+}
+
+#password{
+    background-color: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    width: 335px;
+    height:44px;
+    padding: 10px 40px 10px 40px;
+}
+
+.form-password img:first-of-type{
+    position:absolute;
+    top:36px;
+    left: 12px;
+}
+
+.form-password img:nth-of-type(2){
+    position:absolute;
+    top:36px;
+    right: 12px;
+}
+
+section{
+    margin-bottom: 1rem;
+}
+
+.form-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 335px;
+    height:44px;
+}
+
+.form-mid div:first-of-type{
+    display: flex;
+    gap: 3px;
+}
+
+.form-mid div:first-of-type label{
+    display: flex;
+    align-items: center;
+}
+
+.form-mid div:nth-of-type(2) a{
+    color:#FFC632;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#check-verify{
+    width: 20px;
+    height: 20px;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 335px;
+    height:44px;
+}
+
+.form-footer div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 1rem;
+}
+
+.join{
+    width: 334px;
+    height:51px;
+    background: #FFC632;
+    border-radius: 4px;
+    border: 0;
+    color: #473404;
+    font-size: 18px;
+    box-shadow: 0;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase; 
+}
+
+/* Media queries */
+
+@media (max-width: 1070px) {
+    main{
+        gap: 5rem;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 910px) {
+    .poppins{
+        font-size: calc(16px / 1.25);
+    }
+
+    .roboto{
+        font-size: calc(16px / 1.25);
+    }
+    main{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1px;
+    }
+    .logo{
+        width: calc(250 / 1.25);
+        aspect-ratio: 1;
+    }
+
+    form{
+        height: calc(512px / 1.25);
+        width: calc(572px / 1.25);
+        padding: calc(55px / 1.25) calc(119px /1.25) calc(55px/1.25) calc(119px/1.25);
+    }
+
+    .form-header img{
+        width: calc(24px / 1.25);
+        aspect-ratio: 1;
+    }
+    .form-header1{
+        font-size: calc(24px / 1.25);
+    }
+
+    .form-header2{
+        font-size: calc(16px / 1.25);
+    }
+
+    #email{
+        width: calc(335px / 1.25);
+        height:calc(44px / 1.25);    
+        font-size: calc(16px / 1.25);
+        padding: calc(10px / 1.25) calc(20px / 1.25) calc(10px / 1.25) calc(40px / 1.25);
+    }
+
+    .label-email{
+        font-size: calc(16px / 1.25);
+    }
+
+    .form-email img{
+        top:calc(36px / 1.25);
+        left: calc(12px / 1.25);
+        width: calc(20px / 1.25);
+    }
+
+    #password{
+        width: calc(335px / 1.25);
+        height:calc(44px / 1.25); 
+        padding: calc(10px / 1.25) calc(40px / 1.25) calc(10px / 1.25) calc(40px / 1.25);
+    }
+
+    .label-password{
+        font-size: calc(16px / 1.25);
+    }
+
+    .form-password img:first-of-type{
+        top:calc(36px / 1.25);
+        left: calc(12px / 1.25);
+        width: calc(20px / 1.25);
+    }
+    
+    .form-password img:nth-of-type(2){
+        top:calc(36px / 1.25);
+        right: calc(12px / 1.25);
+        width: calc(20px / 1.25);
+    }
+
+    .form-mid{
+        width: calc(335px / 1.25);
+        height:calc(44px / 1.25); 
+    }
+    .form-mid div:first-of-type label{
+        display: flex;
+        align-items: center;
+        font-size: calc(16px / 1.25);
+    }
+    
+    .form-mid div:nth-of-type(2) a{
+        color:#FFC632;
+        text-decoration: none;
+        font-size: calc(14px / 1.25);
+    }
+
+    .check-verify{
+        width: calc(20px / 1.25);
+        height: calc(20px / 1.25);
+    }
+
+    .form-footer{
+        width: calc(335px / 1.25);
+        height: calc(44px / 1.25);
+    }
+    
+    .form-footer div:nth-of-type(2){
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        padding-top: calc(1rem / 1.25);
+    }
+    
+    .join{
+        width: calc(334px /1.25);
+        height: calc(51px / 1.25);
+        background: #FFC632;
+        border-radius: 4px;
+        border: 0;
+        color: #473404;
+        font-size: calc(18px /1.25);
+        box-shadow: 0;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase; 
+    }
+}

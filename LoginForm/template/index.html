@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- Fontes-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+<body>
+    <main>
+
+        <!-- Try to create a padding box for responsiveness-->
+
+        <div id="logo">
+            <img src="../static/svg/logo.svg" alt="Logo" class="logo">
+        </div>
+
+        <form>
+            <div class="form-header">
+                <div class="form-header1 poppins">
+                <img src="../static/svg/log-in.svg" alt="log-in" class="login"> Faça seu login
+                </div>
+                <div class="form-header2 roboto">
+                    Entre com suas informações de cadastro.
+                </div>
+            </div>
+            
+            <div class="form-email">
+                <label for="email" class="label-email poppins" id="label-email"> E-mail
+                    <input type="email" id="email" class="roboto" placeholder="Digite seu e-mail">
+                    <img src="../static/svg/mail.svg" alt="mail">
+                </label>
+            </div>
+
+            <div class="form-password">
+                <label for="password" class="label-password poppins" id="label-password"> Senha
+                    <input type="password" id="password" class="roboto" placeholder="Digite sua senha">
+                </label>
+                <img src="../static/svg/lock.svg" alt="lock">
+                <img src="../static/svg/eye.svg" alt="eye">
+            </div>
+
+            <section>
+                <div class="form-mid">
+                    <div>
+                        <input type="checkbox" name="check-verify" id="check-verify">
+                        <label for="check-verify" class="roboto">Lembre-me</label>
+                    </div>
+
+                    <div>
+                        <a href="/" class="poppins">Esqueci minha senha</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="form-footer">
+                    <div>
+                        <button class="join poppins">
+                            ENTRAR
+                        </button>
+                    </div>
+                    <div>
+                        <div
+                            class="poppins" style="color: #FFC632;">Não tem uma conta?
+                        </div> 
+                        <a href="/" class="poppins" style="text-decoration: none; font-weight: 600; color: #FFC632;">
+                            Registre-se
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
