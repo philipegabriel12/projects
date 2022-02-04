@@ -60,13 +60,66 @@ aside{
 }
 
 .menu-box{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     background-image: url(../svg/menu.svg);
     background-repeat: no-repeat;
     width: 1.5rem;
     height: 1.5rem;
+
+    transform-style: preserve-3d;
+}
+
+.menu-box:hover:before{
+    opacity: 1;
+}
+
+.menu-box:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 33px;
+    top: -5px;
+    left: -13px;
+    border-radius: 8px;
+    background: rgba(220, 228, 227, 0.8);
+    opacity: 0;
+
+    transform: translateZ(-1px);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.link{
+    width: 24px;
+    height: 24px;
+    transform-style: preserve-3d;
+}
+
+.link:hover::before{
+    opacity: 1;
+}
+
+.link:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 33px;
+    top: -5px;
+    left: -13px;
+    border-radius: 8px;
+    background: rgba(220, 228, 227, 0.8);
+    opacity: 0;
+
+    transform: translateZ(-1px);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 
 .rectangle-1{
+    cursor: pointer;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +128,12 @@ aside{
 
     background: #DCE4E3;
     border-radius: 12px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.rectangle-1:hover{
+    background: #ffffff;
 }
 
 .search-box{
@@ -109,11 +168,18 @@ aside{
 
 .logout{
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     width: 4.875rem;
     height: 3.75rem;
     background: rgba(220, 228, 227, 0.6);
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.logout:hover{
+    background: rgb(255, 255, 255);
 }
 
 @media(min-width: 1730px){
