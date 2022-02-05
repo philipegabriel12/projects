@@ -1,4 +1,5 @@
 # Web development projects
+## Some of my projects throughout 2022
 
 * All source code is written by me.
 * Special thanks to [Rocketseat](https://github.com/Rocketseat) for providing me material such as fun challenges and images/links to work with.
