@@ -11,4 +11,7 @@
 * As a beginner, I would have to say that responsiveness of the webpage is a really difficult thing to master. This time, I didn't use media queries, because it didn't feel necessary. Anyway, this was easier because working with flexbox is so much better when you acquire experience. Nevertheless, I still have a bit of struggle within the design area, however, progress has been made.
 
 ### 3. AnimatedSidebar
-* Programming hits hard. I've made a rookie mistake in the layout which made it impossible to progress, since I would have to create the entire open sidebar with JS. 💀
+* Programming hits hard. I've made a rookie mistake in the layout which made it impossible to progress, since I would have to create the entire open sidebar with JS. 💀💀💀
+
+### 4. LoginForm2
+* Kind of a failure, I just couldn't find a way to add responsiveness to this project, and I'm too lazy to do that 💀
